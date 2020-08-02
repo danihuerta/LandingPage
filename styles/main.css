@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.nav-container{
+    height: 90px;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+
+nav ul{
+    list-style: none;
+    color: #94959a;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 12px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+header .nav-button a{
+    text-decoration: none;
+    padding: 13px 30px;
+    background-image: linear-gradient(to right, #31d06a, #2bb9cf);
+    border-radius: 30px;
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+}
+
+.hero-container{
+    width: 100%;
+    background-color: #fafafa;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-items: center;  
+    align-items: flex-start;  
+    overflow: hidden;
+}
+
+.hero-container .left-side{
+    padding-top: 150px;
+    padding-left: 80px;
+}
+
+.hero-container .left-side h1{
+    font-size: 50px;
+    font-weight: normal;
+    color: #2d334d;
+}
+
+.hero-container .left-side p{
+    font-size: 18px;
+    font-weight: normal;
+    color: #a7a8ac;
+    margin-bottom: 60px;
+}
+
+.hero-container .left-side a{
+    text-decoration: none;
+    padding: 13px 30px;
+    background-image: linear-gradient(to right, #31d167, #2cb8cf);
+    border-radius: 30px;   
+    color: white;
+}
+
+.hero-container .right-side{
+    background-image: url('../images/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: -50px -260px;
+    width: 100%;
+}
+
+.hero-container .right-side figure{
+    margin: 0;
+    padding: 0;
+}
+
+.hero-container .right-side img{
+    position: relative;
+    top: -120px;
+    right: -170px;
+    margin: 0px;
+    z-index: 1;    
+}
+
+.easy-bank{
+    background-color: blue;
+    position: relative;
+    top: -250px;
+}
