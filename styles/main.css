@@ -1,11 +1,10 @@
 body{
     margin: 0;
-    padding: 0;
+    padding-bottom: 0;
     font-family: 'Public Sans', sans-serif;
     font-size: 15px;
-    
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .nav-container{
@@ -19,6 +18,7 @@ body{
     justify-items: center;
     position: relative;
     z-index: 3;
+    max-width: 1360px;
 }
 
 
@@ -45,6 +45,11 @@ header .nav-button a{
     font-size: 15px;
 }
 
+.hero{
+    margin: 0 auto;
+    max-width: 1360px;
+}
+
 .hero-container{
     width: 100%;
     background-color: #fafafa;
@@ -53,6 +58,7 @@ header .nav-button a{
     justify-items: center;  
     align-items: flex-start;  
     overflow: hidden;
+    justify-content: center;
 }
 
 .hero-container .left-side{
@@ -102,7 +108,391 @@ header .nav-button a{
 }
 
 .easy-bank{
-    background-color: blue;
-    position: relative;
-    top: -250px;
+   background-color: #f4f5f7;
+   margin: -250px auto 0px;
+   max-width: 1360px;
+}
+
+.bank-container{
+    width: 90%;
+    padding: 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.bank-container h2{
+    font-size: 35px;
+    font-weight:normal;
+    color: #2e3049;
+}
+
+.bank-container p{
+    font-size: 18px;
+    font-weight: normal;
+    color: #a7a8ac;
+    margin-bottom: 90px;
+}
+
+.benefits-container h3{
+    margin-top:40px;
+    font-size: 23px;
+    font-weight: normal;
+    color: #393a4b;
+}
+
+.benefits-container p{
+    font-size: 15px;
+}
+
+.bank-container .benefits-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+}
+
+.articles-section-container{
+    background-color: #fafafa;
+    margin: 0;
+}
+
+.easy-bank .articles{
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;    
+    box-sizing: border-box;
+}
+
+.easy-bank .articles article{
+    border-radius: 5px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.easy-bank .articles h2{
+    font-size: 35px;
+    font-weight:normal;
+    color: #2e3049;
+}
+
+.easy-bank .articles h4{
+    font-size: 15px;
+    font-weight:normal;
+    color: #2e3049;
+    margin: 0;
+}
+
+.easy-bank .articles small{
+    font-size: 10px;
+    font-weight:normal;
+    color: #2e3049;
+}
+
+.easy-bank .articles p{
+    font-size: 13px;
+    font-weight:normal;
+    color: #a7a8ac;
+}
+
+.easy-bank .articles img{
+    width: 300px;
+    height: 200px;
+}
+
+.articles .articles-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+    margin-bottom: 50px;
+}
+
+.details{
+    padding: 15px;
+}
+
+footer{
+    background-color: #2d314e;
+    height: 180px;
+    margin: 0 auto;
+    max-width: 1360px;
+    padding:20px;
+    min-width: 320px;
+}
+
+.footer-container{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-container .first .logo-img{
+    display: block;
+    margin-bottom: 40px;
+    cursor: pointer;
+    fill: white;
+}
+
+.footer-container .first .icon{
+    margin: 4px;
+    cursor: pointer;
+}
+
+.second{    
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: start;
+
+}
+
+.second ul{
+    list-style: none;
+    padding: 0;
+}
+
+.second ul li{
+    color: white;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.third{
+    width: 100%;
+    align-self: center;
+    margin: 0;
+}
+
+.third p{
+    margin-bottom: 5px;
+    color: #a7a6ab;
+}
+
+.third .request-button{
+    text-decoration: none;
+    padding: 13px 30px;
+    background-image: linear-gradient(to right, #31d06a, #2bb9cf);
+    border-radius: 30px;
+    font-weight: 400;
+    color: white;
+    font-size: 15px;  
+    display: inline-block; 
+}
+
+.third a{
+    text-decoration: none;
+    color: #a7a6ab;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px){
+    .hero-container .right-side img{
+        right:-100px;
+    }
+}
+
+@media screen and (max-width:1250px){
+    .bank-container .benefits-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .hero-container .left-side{
+        padding-top: 100px;
+    }
+
+    .articles .articles-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .footer-container{
+        grid-template-columns: 200px 1fr 200px;
+    }
+
+    .footer-container .third{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .footer-container .second{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:880px){
+    .nav-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;    
+        height: auto; 
+        grid-gap: 15px;   
+        margin-bottom: 20px;
+    }
+
+    nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-logo img{
+        margin-top: 20px;
+    }
+
+    .hero .hero-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "top-area"
+                             "bottom-area";
+    }
+
+    .hero .hero-container .right-side{
+        grid-area: top-area;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .hero .hero-container .right-side figure{
+        text-align: center;
+    }
+
+    .hero .hero-container .right-side img{
+        left: 0;
+        text-align: center;
+    }
+
+    .hero .hero-container .left-side{
+        grid-area: bottom-area;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .easy-bank{
+        margin-top: -500px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    footer{
+        height: auto;
+        padding: 10px;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "logo inf"
+                              "button button";
+    }
+
+    .first{
+        grid-area: logo;
+    }
+
+    .second{
+        grid-area:inf;
+    }
+
+    .third{
+        grid-area: button;
+        text-align: center;
+    }
+
+    .third a{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .hamb-icon{
+        display: block;
+        position: fixed;
+        top: 2px;
+        right: 0px;
+    }
+    .nav-container{
+        display: block;
+    }
+    header nav{
+        position: fixed; 
+        background-color: rgba(49,207,108,0.8);
+        top: -300px;
+        left: 0;
+        right: 0;
+        height: 300px;    
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto 0;
+        color: white;
+    }
+
+    header .nav-button{
+        display: none;
+    }
+
+
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "logo"
+                             "inf"
+                             "button";
+        justify-content: center;                            
+    }
+
+    .second{
+        margin: 0 auto;
+    }
+
+    .second ul{
+        text-align: center;
+    }
+
+    .bank-container .benefits-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .articles .articles-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .articles h2{
+        text-align: center;
+    }
+
+    .hero .hero-container{
+        justify-content: center;
+    }
+
+    .easy-bank .bank-container{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:550px){
+    
 }
